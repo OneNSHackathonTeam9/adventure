@@ -19,6 +19,9 @@ Route::get('story/{name}', 'StoryController@show');
 Route::post('story/{name}', 'StoryController@process');
 
 Route::get('restart/{name}', 'StoryController@restart');
+Route::get('current/{name}', 'StoryController@current');
+Route::get('first/{name}', 'StoryController@first');
+Route::post('first/{name}', 'StoryController@first_process');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
