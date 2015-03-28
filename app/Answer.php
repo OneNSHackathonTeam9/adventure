@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class scenario extends Model {
+class Answer extends Model {
 
-	//
+	protected $table = 'answers';
 
 }

@@ -15,6 +15,11 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('story/{name}', 'StoryController@show');
+Route::post('story/{name}', 'StoryController@process');
+
+Route::get('restart/{name}', 'StoryController@restart');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
